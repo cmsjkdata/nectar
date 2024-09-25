@@ -7,8 +7,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import logoOnly from '../../assets/logoOnly.png';
-import onbording from '../../assets/onbording.png';
+import logoOnly from '../../../assets/logoOnly.png';
+import onbording from '../../../assets/onbording.png';
 
 const Welcome = ({navigation}) => {
   return (
@@ -31,12 +31,12 @@ const Welcome = ({navigation}) => {
         {/* </View> */}
         <View style={styles.buttonStyleView}>
           <TouchableOpacity
+            style={styles.buttonStyle}
             onPress={() => {
               // Perform any additional actions here
-              navigation.replace('SignIn');
-            }}
-            style={styles.buttonStyle}>
-            <Text>Get Start</Text>
+              navigation.push('SignIn');
+            }}>
+            <Text style={styles.buttonText}>Get Start</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -76,15 +76,21 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   buttonStyle: {
+    flex: 0,
+    alignItems: 'center',
+    backgroundColor: '#53B175',
     borderRadius: 20,
-    backgroundColor: '#86D293',
-    paddingHorizontal: 36,
-    paddingVertical: 10,
   },
   buttonStyleView: {
-    flex: 0,
-    borderRadius: 20,
-    paddingVertical: 36,
+    width: '80%',
+
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 20,
+    padding: 20,
   },
 });
 

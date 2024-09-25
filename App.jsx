@@ -1,29 +1,20 @@
 import React, {useState} from 'react';
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
-import AppStack from './navigation/appStack';
+import AppStack from './src/navigation/appStack';
 
-import AuthStack from './navigation/authStack';
-import {MD3LightTheme as DefaultTheme, PaperProvider} from 'react-native-paper';
+import AuthStack from './src/navigation/authStack';
 
 function App() {
-  const theme = {
-    ...DefaultTheme,
-    colors: {
-      ...DefaultTheme.colors,
-      primary: 'tomato',
-      secondary: 'yellow',
-    },
-  };
-
   const [login, setLogin] = useState(true);
 
-  return login ? (
-    <PaperProvider theme={theme}>
-      <AppStack />
-    </PaperProvider>
-  ) : (
-    <AuthStack />
+  return (
+    <View style={styles.container}>{login ? <AppStack /> : <AuthStack />}</View>
   );
 }
 
 export default App;
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#FCFCFC',
+  },
+});

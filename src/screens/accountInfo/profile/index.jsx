@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, FlatList} from 'react-native';
 import React from 'react';
-import List from '../../data.json';
+import List from '../../../../data.json';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import * as Animatable from 'react-native-animatable';
 

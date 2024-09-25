@@ -7,7 +7,7 @@ import {
   // Text,
   View,
 } from 'react-native';
-import logo from '../../assets/logo.png';
+import logo from '../../../assets/logo.png';
 
 const LandingScreen = ({navigation}) => {
   useEffect(() => {
