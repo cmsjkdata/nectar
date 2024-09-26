@@ -7,14 +7,12 @@ import AuthStack from './src/navigation/authStack';
 function App() {
   const [login, setLogin] = useState(true);
 
-  return (
-    <View style={styles.container}>{login ? <AppStack /> : <AuthStack />}</View>
-  );
+  return login ? <AppStack /> : <AuthStack />;
 }
 
 export default App;
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FCFCFC',
+    // backgroundColor: '#FCFCFC',
   },
 });

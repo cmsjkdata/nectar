@@ -17,11 +17,11 @@ const LogIn = ({navigation}) => {
   const [password, setPassword] = useState('');
   return (
     <ScrollView>
-      <ImageBackground source={bgTopLoin}>
-        <View style={styles.imageView}>
-          <Image source={logoColor} />
-        </View>
-      </ImageBackground>
+      {/* <ImageBackground source={bgTopLoin}> */}
+      <View style={styles.imageView}>
+        <Image source={logoColor} />
+      </View>
+      {/* </ImageBackground> */}
       <View style={styles.container}>
         <View style={styles.topContainerView}>
           <Text style={styles.areaHading}>Loging</Text>
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#FCFCFC',
+    // backgroundColor: '#FCFCFC',
     justifyContent: 'space-between',
   },
 
