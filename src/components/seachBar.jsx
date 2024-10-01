@@ -8,8 +8,8 @@ const SearchBar = () => {
   const [showItems, setShowItems] = useState([]);
 
   const searchItemFunc = e => {
-    console.log(e, items.fruits.name);
-    const filteredItems = items.fruits.filter(
+    console.log(e, items.name);
+    const filteredItems = items.filter(
       item => item.name.toLowerCase().includes(e.toLowerCase()), // Assuming the items have a 'name' field
     );
     console.log(filteredItems);
