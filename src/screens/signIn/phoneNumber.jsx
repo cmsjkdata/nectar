@@ -7,6 +7,8 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
+// import PhoneSignIn from './phoneSignIn';
+import auth from '@react-native-firebase/auth';
 
 const PhoneNumber = ({navigation}) => {
   const [phone, setPhone] = useState(null);
@@ -47,9 +49,12 @@ const PhoneNumber = ({navigation}) => {
         </View>
         {error ? <Text style={styles.errorText}>{error}</Text> : null}
       </View>
+      {/* <PhoneSignIn phone={phone} /> */}
       <TouchableOpacity
-        onPress={() => {
-          navigation.push('Code');
+        onPress={async () => {
+          const confirmation = await auth().signInWithPhoneNumber(phone);
+          console.log(confirmation);
+          // navigation.push('Code');
         }}
         style={styles.enterBottunView}>
         <Entypo

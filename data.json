@@ -1,30 +1,855 @@
-[
-  {"id": "1", "type": "State", "name": "Andhra Pradesh"},
-  {"id": "2", "type": "State", "name": "Arunachal Pradesh"},
-  {"id": "3", "type": "State", "name": "Assam"},
-  {"id": "4", "type": "State", "name": "Bihar"},
-  {"id": "5", "type": "State", "name": "Chhattisgarh"},
-  {"id": "6", "type": "State", "name": "Goa"},
-  {"id": "7", "type": "State", "name": "Gujarat"},
-  {"id": "8", "type": "State", "name": "Haryana"},
-  {"id": "9", "type": "State", "name": "Himachal Pradesh"},
-  {"id": "10", "type": "State", "name": "Jharkhand"},
-  {"id": "11", "type": "State", "name": "Karnataka"},
-  {"id": "12", "type": "State", "name": "Kerala"},
-  {"id": "13", "type": "State", "name": "Madhya Pradesh"},
-  {"id": "14", "type": "State", "name": "Maharashtra"},
-  {"id": "15", "type": "State", "name": "Manipur"},
-  {"id": "16", "type": "State", "name": "Meghalaya"},
-  {"id": "17", "type": "State", "name": "Mizoram"},
-  {"id": "18", "type": "State", "name": "Nagaland"},
-  {"id": "19", "type": "State", "name": "Odisha"},
-  {"id": "20", "type": "State", "name": "Punjab"},
-  {"id": "21", "type": "State", "name": "Rajasthan"},
-  {"id": "22", "type": "State", "name": "Sikkim"},
-  {"id": "23", "type": "State", "name": "Tamil Nadu"},
-  {"id": "24", "type": "State", "name": "Telangana"},
-  {"id": "25", "type": "State", "name": "Tripura"},
-  {"id": "26", "type": "State", "name": "Uttar Pradesh"},
-  {"id": "27", "type": "State", "name": "Uttarakhand"},
-  {"id": "28", "type": "State", "name": "West Bengal"}
-]
+{
+  "states": [
+    {"id": "1", "type": "State", "name": "Andhra Pradesh"},
+    {"id": "2", "type": "State", "name": "Arunachal Pradesh"},
+    {"id": "3", "type": "State", "name": "Assam"},
+    {"id": "4", "type": "State", "name": "Bihar"},
+    {"id": "5", "type": "State", "name": "Chhattisgarh"},
+    {"id": "6", "type": "State", "name": "Goa"},
+    {"id": "7", "type": "State", "name": "Gujarat"},
+    {"id": "8", "type": "State", "name": "Haryana"},
+    {"id": "9", "type": "State", "name": "Himachal Pradesh"},
+    {"id": "10", "type": "State", "name": "Jharkhand"},
+    {"id": "11", "type": "State", "name": "Karnataka"},
+    {"id": "12", "type": "State", "name": "Kerala"},
+    {"id": "13", "type": "State", "name": "Madhya Pradesh"},
+    {"id": "14", "type": "State", "name": "Maharashtra"},
+    {"id": "15", "type": "State", "name": "Manipur"},
+    {"id": "16", "type": "State", "name": "Meghalaya"},
+    {"id": "17", "type": "State", "name": "Mizoram"},
+    {"id": "18", "type": "State", "name": "Nagaland"},
+    {"id": "19", "type": "State", "name": "Odisha"},
+    {"id": "20", "type": "State", "name": "Punjab"},
+    {"id": "21", "type": "State", "name": "Rajasthan"},
+    {"id": "22", "type": "State", "name": "Sikkim"},
+    {"id": "23", "type": "State", "name": "Tamil Nadu"},
+    {"id": "24", "type": "State", "name": "Telangana"},
+    {"id": "25", "type": "State", "name": "Tripura"},
+    {"id": "26", "type": "State", "name": "Uttar Pradesh"},
+    {"id": "27", "type": "State", "name": "Uttarakhand"},
+    {"id": "28", "type": "State", "name": "West Bengal"}
+  ],
+  "items": {
+    "fruits": [
+      {
+        "id": "1",
+        "name": "Apple",
+        "image": "https://via.placeholder.com/150?text=Apple",
+        "price": 1.5,
+        "productInfo": "Fresh red apples from local farms.",
+        "review": 4.5,
+        "quantity": 120
+      },
+      {
+        "id": "2",
+        "name": "Banana",
+        "image": "https://via.placeholder.com/150?text=Banana",
+        "price": 0.5,
+        "productInfo": "Organic bananas rich in potassium.",
+        "review": 4.8,
+        "quantity": 200
+      },
+      {
+        "id": "3",
+        "name": "Orange",
+        "image": "https://via.placeholder.com/150?text=Orange",
+        "price": 1.0,
+        "productInfo": "Juicy oranges full of vitamin C.",
+        "review": 4.3,
+        "quantity": 150
+      },
+      {
+        "id": "4",
+        "name": "Grapes",
+        "image": "https://via.placeholder.com/150?text=Grapes",
+        "price": 2.0,
+        "productInfo": "Seedless grapes perfect for snacks.",
+        "review": 4.7,
+        "quantity": 100
+      },
+      {
+        "id": "5",
+        "name": "Strawberry",
+        "image": "https://via.placeholder.com/150?text=Strawberry",
+        "price": 3.0,
+        "productInfo": "Sweet and fresh strawberries.",
+        "review": 4.9,
+        "quantity": 80
+      },
+      {
+        "id": "6",
+        "name": "Blueberry",
+        "image": "https://via.placeholder.com/150?text=Blueberry",
+        "price": 3.5,
+        "productInfo": "Rich in antioxidants, perfect for a healthy diet.",
+        "review": 4.6,
+        "quantity": 60
+      },
+      {
+        "id": "7",
+        "name": "Avocado",
+        "image": "https://via.placeholder.com/150?text=Avocado",
+        "price": 2.5,
+        "productInfo": "Creamy avocados, great for salads.",
+        "review": 4.8,
+        "quantity": 90
+      },
+      {
+        "id": "8",
+        "name": "Mango",
+        "image": "https://via.placeholder.com/150?text=Mango",
+        "price": 1.8,
+        "productInfo": "Sweet and ripe mangoes.",
+        "review": 4.7,
+        "quantity": 70
+      },
+      {
+        "id": "9",
+        "name": "Pineapple",
+        "image": "https://via.placeholder.com/150?text=Pineapple",
+        "price": 3.0,
+        "productInfo": "Tropical pineapples perfect for smoothies.",
+        "review": 4.5,
+        "quantity": 40
+      },
+      {
+        "id": "10",
+        "name": "Peach",
+        "image": "https://via.placeholder.com/150?text=Peach",
+        "price": 2.0,
+        "productInfo": "Juicy peaches for snacking.",
+        "review": 4.6,
+        "quantity": 50
+      },
+      {
+        "id": "11",
+        "name": "Watermelon",
+        "image": "https://via.placeholder.com/150?text=Watermelon",
+        "price": 5.0,
+        "productInfo": "Refreshing watermelon slices.",
+        "review": 4.8,
+        "quantity": 30
+      },
+      {
+        "id": "12",
+        "name": "Kiwi",
+        "image": "https://via.placeholder.com/150?text=Kiwi",
+        "price": 2.0,
+        "productInfo": "Tangy and sweet kiwi fruits.",
+        "review": 4.3,
+        "quantity": 60
+      },
+      {
+        "id": "13",
+        "name": "Blackberry",
+        "image": "https://via.placeholder.com/150?text=Blackberry",
+        "price": 3.0,
+        "productInfo": "Fresh blackberries, perfect for desserts.",
+        "review": 4.4,
+        "quantity": 80
+      },
+      {
+        "id": "14",
+        "name": "Papaya",
+        "image": "https://via.placeholder.com/150?text=Papaya",
+        "price": 2.5,
+        "productInfo": "Sweet papaya, good for digestion.",
+        "review": 4.6,
+        "quantity": 70
+      },
+      {
+        "id": "15",
+        "name": "Raspberry",
+        "image": "https://via.placeholder.com/150?text=Raspberry",
+        "price": 3.5,
+        "productInfo": "Delicious raspberries for a healthy snack.",
+        "review": 4.7,
+        "quantity": 50
+      },
+      {
+        "id": "16",
+        "name": "Coconut",
+        "image": "https://via.placeholder.com/150?text=Coconut",
+        "price": 1.5,
+        "productInfo": "Fresh coconuts with refreshing water.",
+        "review": 4.8,
+        "quantity": 30
+      },
+      {
+        "id": "17",
+        "name": "Lychee",
+        "image": "https://via.placeholder.com/150?text=Lychee",
+        "price": 4.0,
+        "productInfo": "Sweet lychee fruits from Asia.",
+        "review": 4.9,
+        "quantity": 40
+      },
+      {
+        "id": "18",
+        "name": "Dragon Fruit",
+        "image": "https://via.placeholder.com/150?text=Dragon+Fruit",
+        "price": 5.0,
+        "productInfo": "Exotic dragon fruit, rich in nutrients.",
+        "review": 4.6,
+        "quantity": 20
+      },
+      {
+        "id": "19",
+        "name": "Pomegranate",
+        "image": "https://via.placeholder.com/150?text=Pomegranate",
+        "price": 3.0,
+        "productInfo": "Pomegranate seeds are delicious and healthy.",
+        "review": 4.5,
+        "quantity": 50
+      },
+      {
+        "id": "20",
+        "name": "Cranberry",
+        "image": "https://via.placeholder.com/150?text=Cranberry",
+        "price": 4.0,
+        "productInfo": "Fresh cranberries, great for juices.",
+        "review": 4.7,
+        "quantity": 40
+      }
+    ],
+    "dairy": [
+      {
+        "id": "21",
+        "name": "Milk",
+        "image": "https://via.placeholder.com/150?text=Milk",
+        "price": 1.0,
+        "productInfo": "Fresh whole milk, rich and creamy.",
+        "review": 4.8,
+        "quantity": 150
+      },
+      {
+        "id": "22",
+        "name": "Cheese",
+        "image": "https://via.placeholder.com/150?text=Cheese",
+        "price": 2.5,
+        "productInfo": "Aged cheddar cheese, sharp and delicious.",
+        "review": 4.6,
+        "quantity": 80
+      },
+      {
+        "id": "23",
+        "name": "Yogurt",
+        "image": "https://via.placeholder.com/150?text=Yogurt",
+        "price": 1.5,
+        "productInfo": "Creamy yogurt with probiotics.",
+        "review": 4.7,
+        "quantity": 100
+      },
+      {
+        "id": "24",
+        "name": "Butter",
+        "image": "https://via.placeholder.com/150?text=Butter",
+        "price": 2.0,
+        "productInfo": "Unsalted butter, perfect for cooking.",
+        "review": 4.5,
+        "quantity": 60
+      },
+      {
+        "id": "25",
+        "name": "Cottage Cheese",
+        "image": "https://via.placeholder.com/150?text=Cottage+Cheese",
+        "price": 1.8,
+        "productInfo": "Low-fat cottage cheese, great for diets.",
+        "review": 4.4,
+        "quantity": 90
+      },
+      {
+        "id": "26",
+        "name": "Sour Cream",
+        "image": "https://via.placeholder.com/150?text=Sour+Cream",
+        "price": 1.2,
+        "productInfo": "Tangy sour cream, perfect for dips.",
+        "review": 4.6,
+        "quantity": 70
+      },
+      {
+        "id": "27",
+        "name": "Ice Cream",
+        "image": "https://via.placeholder.com/150?text=Ice+Cream",
+        "price": 4.0,
+        "productInfo": "Rich and creamy ice cream in various flavors.",
+        "review": 4.9,
+        "quantity": 40
+      },
+      {
+        "id": "28",
+        "name": "Cream Cheese",
+        "image": "https://via.placeholder.com/150?text=Cream+Cheese",
+        "price": 2.5,
+        "productInfo": "Smooth cream cheese for spreading.",
+        "review": 4.8,
+        "quantity": 60
+      },
+      {
+        "id": "29",
+        "name": "Heavy Cream",
+        "image": "https://via.placeholder.com/150?text=Heavy+Cream",
+        "price": 3.0,
+        "productInfo": "Rich heavy cream for cooking.",
+        "review": 4.7,
+        "quantity": 50
+      },
+      {
+        "id": "30",
+        "name": "Almond Milk",
+        "image": "https://via.placeholder.com/150?text=Almond+Milk",
+        "price": 2.0,
+        "productInfo": "Non-dairy almond milk, lactose-free.",
+        "review": 4.5,
+        "quantity": 100
+      },
+      {
+        "id": "31",
+        "name": "Soy Milk",
+        "image": "https://via.placeholder.com/150?text=Soy+Milk",
+        "price": 1.8,
+        "productInfo": "Protein-rich soy milk for a healthy drink.",
+        "review": 4.4,
+        "quantity": 90
+      },
+      {
+        "id": "32",
+        "name": "Goat Cheese",
+        "image": "https://via.placeholder.com/150?text=Goat+Cheese",
+        "price": 3.5,
+        "productInfo": "Creamy goat cheese, perfect for salads.",
+        "review": 4.6,
+        "quantity": 40
+      },
+      {
+        "id": "33",
+        "name": "Ricotta",
+        "image": "https://via.placeholder.com/150?text=Ricotta",
+        "price": 2.5,
+        "productInfo": "Light ricotta cheese for lasagna.",
+        "review": 4.8,
+        "quantity": 30
+      },
+      {
+        "id": "34",
+        "name": "Milk Powder",
+        "image": "https://via.placeholder.com/150?text=Milk+Powder",
+        "price": 4.0,
+        "productInfo": "Dry milk powder for baking.",
+        "review": 4.7,
+        "quantity": 50
+      },
+      {
+        "id": "35",
+        "name": "Kefir",
+        "image": "https://via.placeholder.com/150?text=Kefir",
+        "price": 2.5,
+        "productInfo": "Probiotic-rich kefir drink.",
+        "review": 4.6,
+        "quantity": 60
+      },
+      {
+        "id": "36",
+        "name": "Cream",
+        "image": "https://via.placeholder.com/150?text=Cream",
+        "price": 3.0,
+        "productInfo": "Thick cream for cooking and desserts.",
+        "review": 4.5,
+        "quantity": 40
+      },
+      {
+        "id": "37",
+        "name": "Clotted Cream",
+        "image": "https://via.placeholder.com/150?text=Clotted+Cream",
+        "price": 4.5,
+        "productInfo": "Devonshire clotted cream, rich and creamy.",
+        "review": 4.8,
+        "quantity": 20
+      },
+      {
+        "id": "38",
+        "name": "Paneer",
+        "image": "https://via.placeholder.com/150?text=Paneer",
+        "price": 2.5,
+        "productInfo": "Fresh paneer cheese for Indian dishes.",
+        "review": 4.6,
+        "quantity": 30
+      }
+    ],
+    "vegetables": [
+      {
+        "id": "39",
+        "name": "Carrot",
+        "image": "https://via.placeholder.com/150?text=Carrot",
+        "price": 0.8,
+        "productInfo": "Crunchy carrots, great for snacks.",
+        "review": 4.7,
+        "quantity": 100
+      },
+      {
+        "id": "40",
+        "name": "Potato",
+        "image": "https://via.placeholder.com/150?text=Potato",
+        "price": 0.5,
+        "productInfo": "Versatile potatoes for all your recipes.",
+        "review": 4.6,
+        "quantity": 150
+      },
+      {
+        "id": "41",
+        "name": "Tomato",
+        "image": "https://via.placeholder.com/150?text=Tomato",
+        "price": 1.2,
+        "productInfo": "Fresh tomatoes, perfect for salads.",
+        "review": 4.8,
+        "quantity": 120
+      },
+      {
+        "id": "42",
+        "name": "Onion",
+        "image": "https://via.placeholder.com/150?text=Onion",
+        "price": 0.6,
+        "productInfo": "Sweet onions, a must-have for cooking.",
+        "review": 4.5,
+        "quantity": 80
+      },
+      {
+        "id": "43",
+        "name": "Garlic",
+        "image": "https://via.placeholder.com/150?text=Garlic",
+        "price": 0.4,
+        "productInfo": "Fresh garlic, adds flavor to any dish.",
+        "review": 4.6,
+        "quantity": 200
+      },
+      {
+        "id": "44",
+        "name": "Peas",
+        "image": "https://via.placeholder.com/150?text=Peas",
+        "price": 1.0,
+        "productInfo": "Sweet green peas, perfect for sides.",
+        "review": 4.4,
+        "quantity": 100
+      },
+      {
+        "id": "45",
+        "name": "Cucumber",
+        "image": "https://via.placeholder.com/150?text=Cucumber",
+        "price": 0.9,
+        "productInfo": "Fresh cucumbers for salads.",
+        "review": 4.7,
+        "quantity": 150
+      },
+      {
+        "id": "46",
+        "name": "Bell Pepper",
+        "image": "https://via.placeholder.com/150?text=Bell+Pepper",
+        "price": 1.5,
+        "productInfo": "Colorful bell peppers, great for stir-fries.",
+        "review": 4.8,
+        "quantity": 80
+      },
+      {
+        "id": "47",
+        "name": "Broccoli",
+        "image": "https://via.placeholder.com/150?text=Broccoli",
+        "price": 2.0,
+        "productInfo": "Fresh broccoli, rich in nutrients.",
+        "review": 4.6,
+        "quantity": 70
+      },
+      {
+        "id": "48",
+        "name": "Spinach",
+        "image": "https://via.placeholder.com/150?text=Spinach",
+        "price": 1.0,
+        "productInfo": "Fresh spinach, great for salads and smoothies.",
+        "review": 4.9,
+        "quantity": 90
+      },
+      {
+        "id": "49",
+        "name": "Lettuce",
+        "image": "https://via.placeholder.com/150?text=Lettuce",
+        "price": 1.2,
+        "productInfo": "Crisp lettuce for salads.",
+        "review": 4.5,
+        "quantity": 120
+      },
+      {
+        "id": "50",
+        "name": "Zucchini",
+        "image": "https://via.placeholder.com/150?text=Zucchini",
+        "price": 1.5,
+        "productInfo": "Versatile zucchini for cooking.",
+        "review": 4.7,
+        "quantity": 80
+      },
+      {
+        "id": "51",
+        "name": "Cauliflower",
+        "image": "https://via.placeholder.com/150?text=Cauliflower",
+        "price": 2.0,
+        "productInfo": "Fresh cauliflower, great for roasting.",
+        "review": 4.6,
+        "quantity": 60
+      },
+      {
+        "id": "52",
+        "name": "Radish",
+        "image": "https://via.placeholder.com/150?text=Radish",
+        "price": 0.7,
+        "productInfo": "Crispy radishes, perfect for salads.",
+        "review": 4.5,
+        "quantity": 100
+      },
+      {
+        "id": "53",
+        "name": "Sweet Potato",
+        "image": "https://via.placeholder.com/150?text=Sweet+Potato",
+        "price": 1.0,
+        "productInfo": "Nutritious sweet potatoes for meals.",
+        "review": 4.7,
+        "quantity": 50
+      },
+      {
+        "id": "54",
+        "name": "Corn",
+        "image": "https://via.placeholder.com/150?text=Corn",
+        "price": 0.5,
+        "productInfo": "Sweet corn for sides and salads.",
+        "review": 4.8,
+        "quantity": 150
+      },
+      {
+        "id": "55",
+        "name": "Asparagus",
+        "image": "https://via.placeholder.com/150?text=Asparagus",
+        "price": 3.0,
+        "productInfo": "Tender asparagus, great for roasting.",
+        "review": 4.6,
+        "quantity": 40
+      }
+    ],
+    "grains": [
+      {
+        "id": "56",
+        "name": "Rice",
+        "image": "https://via.placeholder.com/150?text=Rice",
+        "price": 2.0,
+        "productInfo": "Long-grain white rice, versatile for meals.",
+        "review": 4.5,
+        "quantity": 200
+      },
+      {
+        "id": "57",
+        "name": "Wheat Flour",
+        "image": "https://via.placeholder.com/150?text=Wheat+Flour",
+        "price": 1.5,
+        "productInfo": "All-purpose wheat flour for baking.",
+        "review": 4.6,
+        "quantity": 150
+      },
+      {
+        "id": "58",
+        "name": "Oats",
+        "image": "https://via.placeholder.com/150?text=Oats",
+        "price": 2.5,
+        "productInfo": "Healthy rolled oats for breakfast.",
+        "review": 4.7,
+        "quantity": 100
+      },
+      {
+        "id": "59",
+        "name": "Quinoa",
+        "image": "https://via.placeholder.com/150?text=Quinoa",
+        "price": 3.0,
+        "productInfo": "Nutritious quinoa, high in protein.",
+        "review": 4.8,
+        "quantity": 70
+      },
+      {
+        "id": "60",
+        "name": "Barley",
+        "image": "https://via.placeholder.com/150?text=Barley",
+        "price": 2.0,
+        "productInfo": "Whole barley, great for soups.",
+        "review": 4.5,
+        "quantity": 80
+      },
+      {
+        "id": "61",
+        "name": "Pasta",
+        "image": "https://via.placeholder.com/150?text=Pasta",
+        "price": 1.8,
+        "productInfo": "Various pasta shapes for cooking.",
+        "review": 4.6,
+        "quantity": 90
+      },
+      {
+        "id": "62",
+        "name": "Bread",
+        "image": "https://via.placeholder.com/150?text=Bread",
+        "price": 2.0,
+        "productInfo": "Freshly baked bread, soft and fluffy.",
+        "review": 4.7,
+        "quantity": 60
+      },
+      {
+        "id": "63",
+        "name": "Cornmeal",
+        "image": "https://via.placeholder.com/150?text=Cornmeal",
+        "price": 1.5,
+        "productInfo": "Fine cornmeal for baking.",
+        "review": 4.4,
+        "quantity": 100
+      },
+      {
+        "id": "64",
+        "name": "Couscous",
+        "image": "https://via.placeholder.com/150?text=Couscous",
+        "price": 2.2,
+        "productInfo": "Fluffy couscous for salads.",
+        "review": 4.6,
+        "quantity": 80
+      },
+      {
+        "id": "65",
+        "name": "Rye Flour",
+        "image": "https://via.placeholder.com/150?text=Rye+Flour",
+        "price": 3.0,
+        "productInfo": "Rye flour for healthy baking.",
+        "review": 4.5,
+        "quantity": 70
+      },
+      {
+        "id": "66",
+        "name": "Sorghum",
+        "image": "https://via.placeholder.com/150?text=Sorghum",
+        "price": 2.5,
+        "productInfo": "Sorghum grains for gluten-free recipes.",
+        "review": 4.4,
+        "quantity": 60
+      },
+      {
+        "id": "67",
+        "name": "Millet",
+        "image": "https://via.placeholder.com/150?text=Millet",
+        "price": 2.5,
+        "productInfo": "Nutritious millet for salads and sides.",
+        "review": 4.6,
+        "quantity": 50
+      },
+      {
+        "id": "68",
+        "name": "Brown Rice",
+        "image": "https://via.placeholder.com/150?text=Brown+Rice",
+        "price": 2.0,
+        "productInfo": "Whole grain brown rice, high in fiber.",
+        "review": 4.5,
+        "quantity": 100
+      },
+      {
+        "id": "69",
+        "name": "Rice Noodles",
+        "image": "https://via.placeholder.com/150?text=Rice+Noodles",
+        "price": 2.5,
+        "productInfo": "Thin rice noodles for soups.",
+        "review": 4.6,
+        "quantity": 40
+      },
+      {
+        "id": "70",
+        "name": "Tapioca",
+        "image": "https://via.placeholder.com/150?text=Tapioca",
+        "price": 3.0,
+        "productInfo": "Tapioca pearls for desserts.",
+        "review": 4.8,
+        "quantity": 30
+      },
+      {
+        "id": "71",
+        "name": "Polenta",
+        "image": "https://via.placeholder.com/150?text=Polenta",
+        "price": 2.2,
+        "productInfo": "Creamy polenta for savory dishes.",
+        "review": 4.7,
+        "quantity": 40
+      }
+    ],
+    "snacks": [
+      {
+        "id": "72",
+        "name": "Potato Chips",
+        "image": "https://via.placeholder.com/150?text=Potato+Chips",
+        "price": 2.0,
+        "productInfo": "Crispy potato chips, perfect for snacking.",
+        "review": 4.5,
+        "quantity": 150
+      },
+      {
+        "id": "73",
+        "name": "Chocolate Bar",
+        "image": "https://via.placeholder.com/150?text=Chocolate+Bar",
+        "price": 1.5,
+        "productInfo": "Rich chocolate bars, perfect for a treat.",
+        "review": 4.8,
+        "quantity": 100
+      },
+      {
+        "id": "74",
+        "name": "Granola Bar",
+        "image": "https://via.placeholder.com/150?text=Granola+Bar",
+        "price": 1.0,
+        "productInfo": "Healthy granola bars for energy.",
+        "review": 4.6,
+        "quantity": 80
+      },
+      {
+        "id": "75",
+        "name": "Trail Mix",
+        "image": "https://via.placeholder.com/150?text=Trail+Mix",
+        "price": 3.0,
+        "productInfo": "Nutty trail mix for hiking.",
+        "review": 4.7,
+        "quantity": 60
+      },
+      {
+        "id": "76",
+        "name": "Cookies",
+        "image": "https://via.placeholder.com/150?text=Cookies",
+        "price": 2.5,
+        "productInfo": "Freshly baked cookies, soft and chewy.",
+        "review": 4.9,
+        "quantity": 50
+      },
+      {
+        "id": "77",
+        "name": "Popcorn",
+        "image": "https://via.placeholder.com/150?text=Popcorn",
+        "price": 1.5,
+        "productInfo": "Light and fluffy popcorn for movies.",
+        "review": 4.5,
+        "quantity": 70
+      },
+      {
+        "id": "78",
+        "name": "Beef Jerky",
+        "image": "https://via.placeholder.com/150?text=Beef+Jerky",
+        "price": 3.5,
+        "productInfo": "Savory beef jerky for protein.",
+        "review": 4.8,
+        "quantity": 30
+      },
+      {
+        "id": "79",
+        "name": "Rice Cakes",
+        "image": "https://via.placeholder.com/150?text=Rice+Cakes",
+        "price": 1.0,
+        "productInfo": "Light and crunchy rice cakes.",
+        "review": 4.6,
+        "quantity": 90
+      },
+
+      {
+        "id": "80",
+        "name": "Nuts",
+        "image": "https://via.placeholder.com/150?text=Nuts",
+        "price": 2.5,
+        "productInfo": "Mixed nuts, great for snacking.",
+        "review": 4.6,
+        "quantity": 70
+      },
+      {
+        "id": "81",
+        "name": "Fruit Snacks",
+        "image": "https://via.placeholder.com/150?text=Fruit+Snacks",
+        "price": 1.5,
+        "productInfo": "Chewy fruit snacks for a sweet treat.",
+        "review": 4.4,
+        "quantity": 100
+      },
+      {
+        "id": "82",
+        "name": "Cheese Puffs",
+        "image": "https://via.placeholder.com/150?text=Cheese+Puffs",
+        "price": 1.8,
+        "productInfo": "Crunchy cheese puffs, perfect for parties.",
+        "review": 4.5,
+        "quantity": 80
+      },
+      {
+        "id": "83",
+        "name": "Rice Crackers",
+        "image": "https://via.placeholder.com/150?text=Rice+Crackers",
+        "price": 1.2,
+        "productInfo": "Crispy rice crackers, gluten-free.",
+        "review": 4.6,
+        "quantity": 120
+      },
+      {
+        "id": "84",
+        "name": "Fruit Chips",
+        "image": "https://via.placeholder.com/150?text=Fruit+Chips",
+        "price": 2.0,
+        "productInfo": "Crispy fruit chips, healthy snack.",
+        "review": 4.7,
+        "quantity": 90
+      },
+      {
+        "id": "85",
+        "name": "Energy Bars",
+        "image": "https://via.placeholder.com/150?text=Energy+Bars",
+        "price": 2.5,
+        "productInfo": "Nutritious energy bars for a boost.",
+        "review": 4.8,
+        "quantity": 50
+      },
+      {
+        "id": "86",
+        "name": "Dried Fruits",
+        "image": "https://via.placeholder.com/150?text=Dried+Fruits",
+        "price": 3.0,
+        "productInfo": "Assorted dried fruits for a healthy snack.",
+        "review": 4.6,
+        "quantity": 60
+      },
+      {
+        "id": "87",
+        "name": "Snack Mix",
+        "image": "https://via.placeholder.com/150?text=Snack+Mix",
+        "price": 2.5,
+        "productInfo": "A delicious mix of snacks for munching.",
+        "review": 4.7,
+        "quantity": 70
+      },
+      {
+        "id": "88",
+        "name": "Veggie Chips",
+        "image": "https://via.placeholder.com/150?text=Veggie+Chips",
+        "price": 2.0,
+        "productInfo": "Crispy veggie chips, a healthy alternative.",
+        "review": 4.5,
+        "quantity": 80
+      },
+      {
+        "id": "89",
+        "name": "Chocolate Covered Nuts",
+        "image": "https://via.placeholder.com/150?text=Chocolate+Covered+Nuts",
+        "price": 3.5,
+        "productInfo": "Delicious nuts covered in chocolate.",
+        "review": 4.9,
+        "quantity": 40
+      },
+      {
+        "id": "90",
+        "name": "Puffed Rice",
+        "image": "https://via.placeholder.com/150?text=Puffed+Rice",
+        "price": 1.0,
+        "productInfo": "Light and crispy puffed rice snacks.",
+        "review": 4.4,
+        "quantity": 100
+      }
+    ]
+  }
+}

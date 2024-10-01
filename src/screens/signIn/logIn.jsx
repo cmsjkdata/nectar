@@ -6,15 +6,34 @@ import {
   View,
   Image,
   ScrollView,
-  ImageBackground,
 } from 'react-native';
 import React, {useState} from 'react';
 import logoColor from '../../../assets/logoColor.png';
-import bgTopLoin from '../../../assets/bgTopLoin.png';
+// import bgTopLoin from '../../../assets/bgTopLoin.png';
+import auth from '@react-native-firebase/auth';
 
 const LogIn = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const createUser = () => {
+    console.log(email, password);
+    auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        console.log('User account created & signed in!');
+      })
+      .catch(error => {
+        if (error.code === 'auth/email-already-in-use') {
+          console.log('That email address is already in use!');
+        }
+
+        if (error.code === 'auth/invalid-email') {
+          console.log('That email address is invalid!');
+        }
+
+        console.error(error);
+      });
+  };
   return (
     <ScrollView>
       {/* <ImageBackground source={bgTopLoin}> */}
@@ -72,7 +91,7 @@ const LogIn = ({navigation}) => {
           <TouchableOpacity
             style={styles.logInButtonTouchbale}
             onPress={e => {
-              navigation.push('');
+              createUser();
             }}>
             <Text style={styles.logInButton}>Log In</Text>
           </TouchableOpacity>

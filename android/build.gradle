@@ -15,7 +15,14 @@ buildscript {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+           classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
 apply plugin: "com.facebook.react.rootproject"
+// buildscript {
+//     dependencies {
+//         // Add the Firebase Gradle plugin
+//       // Check the latest version
+//     }
+// }

@@ -34,7 +34,7 @@ const Welcome = ({navigation}) => {
             style={styles.buttonStyle}
             onPress={() => {
               // Perform any additional actions here
-              navigation.push('SignIn');
+              navigation.push('Home');
             }}>
             <Text style={styles.buttonText}>Get Start</Text>
           </TouchableOpacity>
