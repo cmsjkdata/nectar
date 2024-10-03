@@ -16,33 +16,44 @@ const Welcome = ({navigation}) => {
       <View style={styles.container}>
         <Image style={styles.imageLogo} source={logoOnly} />
 
-        {/* <View style={styles.welcomeText}> */}
-        <View>
-          <Text style={styles.text_}>Welcome </Text>
-        </View>
-        <View>
+        {/* Welcome Text Section */}
+        <View style={styles.textContainer}>
+          <Text style={styles.text_}>Welcome</Text>
           <Text style={styles.text_}>to our store</Text>
-        </View>
-        <View>
           <Text style={styles.textSmall}>
-            Ger your groceries in as fast as one hour
+            Get your groceries in as fast as one hour
           </Text>
         </View>
-        {/* </View> */}
+
+        {/* Button Section */}
         <View style={styles.buttonStyleView}>
+          {/* <TouchableOpacity
+            style={styles.submitButtonTouchbale}
+            onPress={() => {
+              navigation.push('LogIn');
+            }}>
+            <Text style={styles.submitButton}>Submit</Text>
+          </TouchableOpacity> */}
           <TouchableOpacity
             style={styles.buttonStyle}
             onPress={() => {
-              // Perform any additional actions here
-              navigation.push('Home');
+              navigation.navigate('LogIn');
             }}>
-            <Text style={styles.buttonText}>Get Start</Text>
+            <Text style={styles.buttonText}>Get Started</Text>
           </TouchableOpacity>
         </View>
       </View>
+      <TouchableOpacity
+        style={styles.buttonStyle}
+        onPress={() => {
+          console.log('asdf');
+        }}>
+        <Text style={styles.buttonText}>Get Started</Text>
+      </TouchableOpacity>
     </ImageBackground>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -50,42 +61,52 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
   },
-  imageLogo: {},
-  text_: {
-    flex: 0,
+  imageLogo: {
+    width: 100, // You can adjust this size based on your design
+    height: 100, // Adjust as needed
+    marginBottom: 20,
+  },
+  textContainer: {
     alignItems: 'center',
-    alignContent: 'center',
+    marginBottom: 40,
+  },
+  text_: {
     fontSize: 36,
-    width: '65%',
     color: 'white',
     fontFamily: 'Roboto-Bold',
+    textAlign: 'center',
   },
   textSmall: {
-    flex: 0,
-    alignItems: 'center',
-    alignContent: 'center',
-    fontSize: 10,
-    width: '65%',
+    fontSize: 14,
     color: 'white',
     paddingBottom: 40,
+    textAlign: 'center',
     fontFamily: 'Roboto-Bold',
   },
-
   backgroundImage: {
     width: '100%',
     height: '100%',
   },
-  buttonStyle: {
-    flex: 0,
-    alignItems: 'center',
-    backgroundColor: '#53B175',
-    borderRadius: 20,
-  },
   buttonStyleView: {
     width: '80%',
-
     paddingVertical: 10,
     paddingHorizontal: 20,
+  },
+  submitButtonTouchbale: {
+    backgroundColor: '#53B175',
+    borderRadius: 20,
+    marginBottom: 10,
+    alignItems: 'center',
+  },
+  submitButton: {
+    color: 'white',
+    fontSize: 20,
+    padding: 20,
+  },
+  buttonStyle: {
+    backgroundColor: '#53B175',
+    borderRadius: 20,
+    alignItems: 'center',
   },
   buttonText: {
     color: 'white',

@@ -2,15 +2,17 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import SeachBar from '../../components/seachBar';
 
-const index = () => {
+const Home = () => {
+  // const Welcome = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <SeachBar />
+      <Text>gdf</Text>
+      {/* <SeachBar /> */}
     </View>
   );
 };
 
-export default index;
+export default Home;
 
 const styles = StyleSheet.create({
   container: {

@@ -12,10 +12,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        // classpath("com.android.tools.build:gradle:8.3.2")
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
-           classpath 'com.google.gms:google-services:4.3.15'
+        classpath("com.google.gms:google-services:4.3.15")
     }
 }
 
@@ -24,5 +25,13 @@ apply plugin: "com.facebook.react.rootproject"
 //     dependencies {
 //         // Add the Firebase Gradle plugin
 //       // Check the latest version
+//     }
+// }
+// buildscript {
+//     //...
+//     dependencies {
+//         classpath 'com.android.tools.build:gradle:7.2.1'
+
+//         // ...
 //     }
 // }

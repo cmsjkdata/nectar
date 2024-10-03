@@ -7,15 +7,15 @@ const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showItems, setShowItems] = useState([]);
 
-  const searchItemFunc = e => {
-    console.log(e, items.name);
-    const filteredItems = items.filter(
-      item => item.name.toLowerCase().includes(e.toLowerCase()), // Assuming the items have a 'name' field
-    );
-    console.log(filteredItems);
-    setShowItems(filteredItems);
-    setSearchQuery(e);
-  };
+  // const searchItemFunc = e => {
+  //   console.log(e, items.name);
+  //   const filteredItems = items.filter(
+  //     item => item.name.toLowerCase().includes(e.toLowerCase()), // Assuming the items have a 'name' field
+  //   );
+  //   console.log(filteredItems);
+  //   setShowItems(filteredItems);
+  //   setSearchQuery(e);
+  // };
 
   const renderItem = ({item}) => (
     <View style={styles.itemContainer}>
@@ -29,7 +29,7 @@ const SearchBar = () => {
         <TextInput
           value={searchQuery}
           placeholder="Search Query"
-          onChangeText={searchItemFunc}
+          // onChangeText={searchItemFunc}
           style={styles.textInput}
         />
         {!searchQuery && <Icon name={'search'} size={28} />}

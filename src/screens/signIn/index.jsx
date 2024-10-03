@@ -10,10 +10,10 @@ import React from 'react';
 import maskGroup from '../../../assets/maskGroup.png';
 import Google from 'react-native-vector-icons/AntDesign';
 import Facebook from 'react-native-vector-icons/FontAwesome';
-import {
-  GoogleSignin,
-  statusCodes,
-} from '@react-native-google-signin/google-signin';
+// import {
+//   GoogleSignin,
+//   statusCodes,
+// } from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 
 const SignIn = ({navigation}) => {
@@ -37,30 +37,27 @@ const SignIn = ({navigation}) => {
   // };
 
   const signInWithGoogle = async () => {
-    try {
-      // Check if the device has Google Play services
-      await GoogleSignin.hasPlayServices({showPlayServicesUpdateDialog: true});
-
-      // Get user info from Google
-      const {idToken} = await GoogleSignin.signIn();
-
-      // Create a Google credential with the token
-      const googleCredential = auth.GoogleAuthProvider.credential(idToken);
-
-      // Sign-in the user with the credential
-      return auth().signInWithCredential(googleCredential);
-    } catch (error) {
-      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-        // User cancelled the sign-in process
-      } else if (error.code === statusCodes.IN_PROGRESS) {
-        // Operation (e.g. sign-in) is in progress already
-      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-        // Play services not available or outdated
-      } else {
-        // Some other error happened
-        console.error(error);
-      }
-    }
+    // try {
+    //   // Check if the device has Google Play services
+    //   await GoogleSignin.hasPlayServices({showPlayServicesUpdateDialog: true});
+    //   // Get user info from Google
+    //   const {idToken} = await GoogleSignin.signIn();
+    //   // Create a Google credential with the token
+    //   const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+    //   // Sign-in the user with the credential
+    //   return auth().signInWithCredential(googleCredential);
+    // } catch (error) {
+    //   if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+    //     // User cancelled the sign-in process
+    //   } else if (error.code === statusCodes.IN_PROGRESS) {
+    //     // Operation (e.g. sign-in) is in progress already
+    //   } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+    //     // Play services not available or outdated
+    //   } else {
+    //     // Some other error happened
+    //     console.error(error);
+    //   }
+    // }
   };
 
   return (
